@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "ecosia-to-google",
+  "version": "1.0",
+  "description": "Switch current Ecosia search results to Google",
+  "icons": {
+	  "48": "G_Logo.svg"
+  },
+  
+  "permissions": [
+	"activeTab",
+    "tabs"
+  ],
+
+  "page_action": {
+	"show_matches": ["https://www.ecosia.org/search*"],
+    "default_icon": "G_Logo.svg",
+    "default_title": "Show in Google"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}
